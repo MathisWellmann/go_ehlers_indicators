@@ -9,7 +9,7 @@ func TestReFlex(t *testing.T) {
 	vals := GenerateTimeseries(1024)
 	reflex := ReFlex(vals, 16)
 	for i := 0; i < len(reflex); i++ {
-		fmt.Sprintf("reflex[%d]: %f", i, reflex)
+		fmt.Sprintf("reflex[%d]: %f\n", i, reflex)
 	}
 }
 

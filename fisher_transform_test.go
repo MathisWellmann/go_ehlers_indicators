@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFisherTransform(t *testing.T) {
+func TestFisherTransformGraph(t *testing.T) {
 	vals := GenerateSineWave(1024)
 	fish, err := FisherTransform(vals)
 	if err != nil {

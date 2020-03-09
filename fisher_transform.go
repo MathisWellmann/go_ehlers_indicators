@@ -7,6 +7,7 @@ import (
 
 // FisherTransform applies the fisher transform function to an array and outputs one with the same length
 // Only accepts inputs in range (-1, 1)
+// original pdf: https://www.mesasoftware.com/papers/UsingTheFisherTransform.pdf
 func FisherTransform(vals []float64) ([]float64, error) {
 	out := make([]float64, len(vals))
 

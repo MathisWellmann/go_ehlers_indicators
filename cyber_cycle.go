@@ -3,6 +3,7 @@ package EhlersTAIndicators
 import "math"
 
 // CyberCycle Indicator with alpha set to standard ema alpha: 2.0 / (windowLen + 1)
+//
 func CyberCycle(vals []float64, windowLen int) []float64 {
 	out := make([]float64, len(vals))
 

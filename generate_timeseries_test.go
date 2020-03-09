@@ -55,3 +55,13 @@ func checkImgDirectory() error {
 	}
 	return nil
 }
+
+func TestGenerateSinewave(t *testing.T) {
+	sine := GenerateSineWave(1024)
+
+	filename := fmt.Sprintf("img/sinewave.png")
+	err := Plt(sine, filename)
+	if err != nil {
+		t.Error(err)
+	}
+}

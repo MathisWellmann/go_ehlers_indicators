@@ -65,3 +65,13 @@ func TestGenerateSinewave(t *testing.T) {
 		t.Error(err)
 	}
 }
+
+func TestGenerateGaussianTimeseries(t *testing.T) {
+	vals := GenerateGaussianTimeseries(1024)
+
+	filename := fmt.Sprintf("img/TestGenerateGaussianTimeseris.png")
+	err := Plt(vals, filename)
+	if err != nil {
+		t.Error(err)
+	}
+}

@@ -10,4 +10,5 @@ Indicators include:
 - ReFlex
 - TrendFlex
 - MAMA (MESA adaptive moving average)
+- FAMA
 - FRAMA (Fractal adaptive moving average)

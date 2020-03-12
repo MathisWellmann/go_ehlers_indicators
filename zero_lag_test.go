@@ -15,3 +15,14 @@ func TestZeroLagGraph(t *testing.T) {
 		t.Error(err)
 	}
 }
+
+// TestZeroLagGraphStep tests the zero lag filter on a step function by graphing it
+func TestZeroLagGraphStep(t *testing.T) {
+	vals := GenerateStepFunction(1024, 500, 100)
+
+	filename := fmt.Sprintf("img/TestZeroLagGraphStep.png")
+	err := Plt(vals, filename)
+	if err != nil {
+		t.Error(err)
+	}
+}

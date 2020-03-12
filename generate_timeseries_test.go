@@ -75,3 +75,12 @@ func TestGenerateGaussianTimeseries(t *testing.T) {
 		t.Error(err)
 	}
 }
+
+func TestGenerateStepFunctionGraph(t *testing.T) {
+	vals := GenerateStepFunction(1024, 500, 100)
+	filename := fmt.Sprintf("img/TestGenerateStepFuntionGraph.png")
+	err := Plt(vals, filename)
+	if err != nil {
+		t.Error(err)
+	}
+}

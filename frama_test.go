@@ -2,11 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
+	"github.com/MathisWellmann/timeseries_generator"
 	"testing"
 )
 
 func TestFRAMAGraph(t *testing.T) {
-	highs, lows := GenerateGaussianHL(1024)
+	highs, lows := timeseries_generator.GaussianHL(1024)
 	frama, err := FRAMA(highs, lows, 16)
 	if err != nil {
 		t.Error(err)

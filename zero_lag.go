@@ -7,7 +7,8 @@ func ZeroLag(vals []float64, length, gainLimit int) []float64 {
 	ema := make([]float64, len(vals))
 	ecs := make([]float64, len(vals))
 
-	for i := 0; i < len(ecs); i++ {
+	ema[0] = vals[0]
+	for i := 1; i < len(ecs); i++ {
 		alpha := 2.0 / (float64(length) + 1.0)
 		ema[i] = alpha*vals[i] + (1.0-alpha)*ema[i-1]
 		leastErr := 1e7

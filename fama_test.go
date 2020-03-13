@@ -2,11 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
+	"github.com/MathisWellmann/timeseries_generator"
 	"testing"
 )
 
 func TestFAMAGraph(t *testing.T) {
-	vals := GenerateTimeseries(1024)
+	vals := timeseries_generator.GaussianProcess(1024)
 
 	fama := FAMADefault(vals)
 	filename := fmt.Sprintf("img/fama.png")

@@ -2,11 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
+	"github.com/MathisWellmann/timeseries_generator"
 	"testing"
 )
 
 func TestCyberCycle(t *testing.T) {
-	vals := GenerateTimeseries(1024)
+	vals := timeseries_generator.GaussianProcess(1024)
 	cc := CyberCycle(vals, 16)
 	for i := 0; i < len(cc); i++ {
 		fmt.Printf("cc[%d]: %f\n", i, cc[i])
@@ -14,16 +15,11 @@ func TestCyberCycle(t *testing.T) {
 }
 
 func TestCyberCycleGraph(t *testing.T) {
-	vals := GenerateTimeseries(1024)
+	vals := timeseries_generator.GaussianProcess(1024)
 	cc := CyberCycle(vals, 16)
 
-	err := checkImgDirectory()
-	if err != nil {
-		t.Error(err)
-	}
-
-	filename := fmt.Sprintf("./img/TestCyberCycleGraph.png")
-	err = Plt(cc, filename)
+	filename := fmt.Sprintf("./img/cyber_cycle.png")
+	err := Plt(cc, filename)
 	if err != nil {
 		t.Error(err)
 	}

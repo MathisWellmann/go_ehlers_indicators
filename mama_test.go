@@ -2,11 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
+	"github.com/MathisWellmann/timeseries_generator"
 	"testing"
 )
 
 func TestMAMAGraph(t *testing.T) {
-	vals := GenerateTimeseries(1024)
+	vals := timeseries_generator.GaussianProcess(1024)
 
 	mama := MAMADefault(vals)
 	filename := fmt.Sprintf("img/mama.png")

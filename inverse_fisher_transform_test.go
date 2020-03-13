@@ -2,11 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
+	"github.com/MathisWellmann/timeseries_generator"
 	"testing"
 )
 
 func TestInverseFisherTransform(t *testing.T) {
-	sine := GenerateSineWave(1024)
+	sine := timeseries_generator.SineWave(1024)
 	ift := InverseFisherTransform(sine)
 
 	for i := 0; i < len(ift); i++ {
@@ -17,7 +18,7 @@ func TestInverseFisherTransform(t *testing.T) {
 }
 
 func TestInverseFisherTransformGraph(t *testing.T) {
-	sine := GenerateSineWave(1024)
+	sine := timeseries_generator.SineWave(1024)
 	ift := InverseFisherTransform(sine)
 
 	filename := fmt.Sprintf("img/inverse_fisher_transform.png")

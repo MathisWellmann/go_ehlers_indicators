@@ -2,11 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
+	"github.com/MathisWellmann/timeseries_generator"
 	"testing"
 )
 
 func TestReFlex(t *testing.T) {
-	vals := GenerateTimeseries(1024)
+	vals := timeseries_generator.GaussianProcess(1024)
 	reflex := ReFlex(vals, 16)
 	for i := 0; i < len(reflex); i++ {
 		fmt.Sprintf("reflex[%d]: %f\n", i, reflex)
@@ -14,14 +15,11 @@ func TestReFlex(t *testing.T) {
 }
 
 func TestReFlexGraph(t *testing.T) {
-	vals := GenerateTimeseries(1024)
+	vals := timeseries_generator.GaussianProcess(1024)
 	reflex := ReFlex(vals, 16)
-	err := checkImgDirectory()
-	if err != nil {
-		t.Error(err)
-	}
-	filename := fmt.Sprintf("./img/TestReFlexGraph.png")
-	err = Plt(reflex, filename)
+
+	filename := fmt.Sprintf("./img/re_flex.png")
+	err := Plt(reflex, filename)
 	if err != nil {
 		t.Error(err)
 	}

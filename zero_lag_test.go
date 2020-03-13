@@ -21,7 +21,7 @@ func TestZeroLagGraph(t *testing.T) {
 func TestZeroLagGraphStep(t *testing.T) {
 	vals := timeseries_generator.StepFunction(1024, 500, 100)
 
-	filename := fmt.Sprintf("img/zero_lag.png")
+	filename := fmt.Sprintf("img/zero_lag_step.png")
 	err := Plt(vals, filename)
 	if err != nil {
 		t.Error(err)

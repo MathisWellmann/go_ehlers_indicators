@@ -7,7 +7,9 @@ import (
 )
 
 func TestFRAMAGraph(t *testing.T) {
-	highs, lows := timeseries_generator.GaussianHL(1024)
+	candles := timeseries_generator.GaussianOHLCVDefault(1024)
+	highs := make([]float64, len(candles))
+	lows := make([]float64, len(candles))
 	frama, err := FRAMA(highs, lows, 16)
 	if err != nil {
 		t.Error(err)

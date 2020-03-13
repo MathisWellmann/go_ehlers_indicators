@@ -38,7 +38,7 @@ func Plt(vals []float64, filename string) error {
 	if err != nil {
 		return err
 	}
-	p.Title.Text = "line plot"
+	p.Title.Text = filename
 
 	line, err := plotter.NewLine(values)
 	if err != nil {

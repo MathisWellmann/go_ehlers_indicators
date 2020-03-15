@@ -1,8 +1,13 @@
 # Ehlers Indicators and Filters
-A collection of John Ehlers technical analysis indicators written in pure go
-Every indicator includes tests and a graph on synthetic data.
+A collection of John Ehlers technical analysis indicators and filters written in pure go
+Every indicator includes tests and a graph on [synthetic data](https://github.com/MathisWellmann/go_timeseries_generator).
 
-Indicators include:
+### Installation:
+``
+go get github.com/MathisWellmann/go_ehlers_indicators
+``
+
+### Indicators / Filters include:
 - [FAMA](https://www.mesasoftware.com/papers/MAMA.pdf)
 - [Laguerre Filter](http://mesasoftware.com/papers/TimeWarp.pdf)
 - [FRAMA (Fractal adaptive moving average)](http://mesasoftware.com/papers/FRAMA.pdf)
@@ -13,6 +18,8 @@ Indicators include:
 - ReFlex
 - TrendFlex
 - [MAMA (MESA adaptive moving average)](https://www.mesasoftware.com/papers/MAMA.pdf)
+- [Laguerre RSI](http://mesasoftware.com/papers/TimeWarp.pdf)
+
 
 ### Images:
 With synthetic data from [MathisWellmann/timeseries_generator](https://github.com/MathisWellmann/timeseries_generator)
@@ -25,14 +32,16 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 ![mama](img/mama.png)
 ![re_flex](img/re_flex.png)
 ![trend_flex](img/trend_flex.png)
+![laguerre_rsi](img/laguerre_rsi.png)
 ![fisher_transform](img/fisher_transform.png)
 ![inverse_fisher_transform](img/inverse_fisher_transform.png)
 
-## TODOs:
-- Laguerre Filter
+### TODOs:
 - Swiss Army Knife Indicator
 - Ehlers Filter
 - Gaussian Filter
+- [Super Smoother](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
+- [Roofing Filter](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
 - (maybe) Empirical mode decomposition
 - (maybe) Fourier Transform for traders
 

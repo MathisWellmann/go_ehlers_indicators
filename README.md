@@ -3,23 +3,25 @@ A collection of John Ehlers technical analysis indicators written in pure go
 Every indicator includes tests and a graph on synthetic data.
 
 Indicators include:
-- Center of Gravity
+- FAMA
+- Laguerre Filter
+- FRAMA (Fractal adaptive moving average)
 - Cyber Cycle
+- Center of Gravity
 - Fisher Transform
 - Inverse FisherTransform
 - ReFlex
 - TrendFlex
 - MAMA (MESA adaptive moving average)
-- FAMA
-- FRAMA (Fractal adaptive moving average)
 
 ### Images:
 With synthetic data from [MathisWellmann/timeseries_generator](https://github.com/MathisWellmann/timeseries_generator)
 
 ![fama](img/fama.png)
+![laguerre_filter](img/laguerre_filter.png)
+![frama](img/frama.png)
 ![cyber_cycle](img/cyber_cycle.png)
 ![center_of_gravity](img/center_of_gravity.png)
-![frama](img/frama.png)
 ![mama](img/mama.png)
 ![re_flex](img/re_flex.png)
 ![trend_flex](img/trend_flex.png)

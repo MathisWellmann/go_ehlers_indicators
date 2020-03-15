@@ -20,6 +20,7 @@ go get github.com/MathisWellmann/go_ehlers_indicators
 - [MAMA (MESA adaptive moving average)](https://www.mesasoftware.com/papers/MAMA.pdf)
 - [Laguerre RSI](http://mesasoftware.com/papers/TimeWarp.pdf)
 - [Roofing Filter](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
+- [Super Smoother](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
 
 
 ### Images:
@@ -28,6 +29,7 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 ![fama](img/fama.png)
 ![laguerre_filter](img/laguerre_filter.png)
 ![frama](img/frama.png)
+![super_smoother](img/super_smoother.png)
 ![cyber_cycle](img/cyber_cycle.png)
 ![center_of_gravity](img/center_of_gravity.png)
 ![mama](img/mama.png)
@@ -42,7 +44,6 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 - Swiss Army Knife Indicator
 - Ehlers Filter
 - Gaussian Filter
-- [Super Smoother](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
 - (maybe) Empirical mode decomposition
 - (maybe) Fourier Transform for traders
 

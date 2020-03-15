@@ -11,7 +11,7 @@ go get github.com/MathisWellmann/go_ehlers_indicators
 - [FAMA](https://www.mesasoftware.com/papers/MAMA.pdf)
 - [Laguerre Filter](http://mesasoftware.com/papers/TimeWarp.pdf)
 - [FRAMA (Fractal adaptive moving average)](http://mesasoftware.com/papers/FRAMA.pdf)
-- Cyber Cycle
+- [Cyber Cycle](https://www.mesasoftware.com/papers/TheInverseFisherTransform.pdf)
 - [Center of Gravity](https://mesasoftware.com/papers/TheCGOscillator.pdf)
 - [Fisher Transform](https://www.mesasoftware.com/papers/UsingTheFisherTransform.pdf)
 - [Inverse FisherTransform](http://www.mesasoftware.com/papers/TheInverseFisherTransform.pdf)
@@ -19,6 +19,7 @@ go get github.com/MathisWellmann/go_ehlers_indicators
 - TrendFlex
 - [MAMA (MESA adaptive moving average)](https://www.mesasoftware.com/papers/MAMA.pdf)
 - [Laguerre RSI](http://mesasoftware.com/papers/TimeWarp.pdf)
+- [Roofing Filter](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
 
 
 ### Images:
@@ -33,6 +34,7 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 ![re_flex](img/re_flex.png)
 ![trend_flex](img/trend_flex.png)
 ![laguerre_rsi](img/laguerre_rsi.png)
+![Roofing Filter](img/roofing_filter.png)
 ![fisher_transform](img/fisher_transform.png)
 ![inverse_fisher_transform](img/inverse_fisher_transform.png)
 
@@ -41,7 +43,6 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 - Ehlers Filter
 - Gaussian Filter
 - [Super Smoother](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
-- [Roofing Filter](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
 - (maybe) Empirical mode decomposition
 - (maybe) Fourier Transform for traders
 

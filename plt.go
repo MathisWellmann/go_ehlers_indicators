@@ -1,4 +1,4 @@
-package EhlersTAIndicators
+package go_ehlers_indicators
 
 import (
 	"gonum.org/v1/plot"

@@ -1,4 +1,4 @@
-package EhlersTAIndicators
+package go_ehlers_indicators
 
 // FAMA
 func FAMA(vals []float64, fastLimit, slowLimit float64) []float64 {

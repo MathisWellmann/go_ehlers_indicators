@@ -1,4 +1,4 @@
-package EhlersTAIndicators
+package go_ehlers_indicators
 
 // Extent returns the min and max values of values
 func Extent(vals []float64) (float64, float64) {

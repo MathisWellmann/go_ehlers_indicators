@@ -1,7 +1,6 @@
-package EhlersTAIndicators
+package go_ehlers_indicators
 
-// CenterOfGravity Oscillator or CGOscillator by John Ehlers
-//
+// CenterOfGravity Oscillator from this paper: https://mesasoftware.com/papers/TheCGOscillator.pdf
 func CenterOfGravity(vals []float64, windowLen int) []float64 {
 	out := make([]float64, len(vals))
 

@@ -1,18 +1,18 @@
-# EhlersTAIndicators
+# Ehlers Indicators and Filters
 A collection of John Ehlers technical analysis indicators written in pure go
 Every indicator includes tests and a graph on synthetic data.
 
 Indicators include:
-- FAMA
-- Laguerre Filter
-- FRAMA (Fractal adaptive moving average)
+- [FAMA](https://www.mesasoftware.com/papers/MAMA.pdf)
+- [Laguerre Filter](http://mesasoftware.com/papers/TimeWarp.pdf)
+- [FRAMA (Fractal adaptive moving average)](http://mesasoftware.com/papers/FRAMA.pdf)
 - Cyber Cycle
-- Center of Gravity
-- Fisher Transform
-- Inverse FisherTransform
+- [Center of Gravity](https://mesasoftware.com/papers/TheCGOscillator.pdf)
+- [Fisher Transform](https://www.mesasoftware.com/papers/UsingTheFisherTransform.pdf)
+- [Inverse FisherTransform](http://www.mesasoftware.com/papers/TheInverseFisherTransform.pdf)
 - ReFlex
 - TrendFlex
-- MAMA (MESA adaptive moving average)
+- [MAMA (MESA adaptive moving average)](https://www.mesasoftware.com/papers/MAMA.pdf)
 
 ### Images:
 With synthetic data from [MathisWellmann/timeseries_generator](https://github.com/MathisWellmann/timeseries_generator)

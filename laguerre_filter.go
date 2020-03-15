@@ -1,5 +1,6 @@
-package EhlersTAIndicators
+package go_ehlers_indicators
 
+// LaguerreFilter from paper: http://mesasoftware.com/papers/TimeWarp.pdf
 func LaguerreFilter(vals []float64, gamma float64) []float64 {
 	l0s := make([]float64, len(vals))
 	l1s := make([]float64, len(vals))

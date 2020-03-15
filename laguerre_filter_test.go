@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestMAMAGraph(t *testing.T) {
+func TestLaguerreFilter(t *testing.T) {
 	vals := go_timeseries_generator.GaussianProcess(1024)
+	l := LaguerreFilterDefault(vals)
 
-	mama := MAMADefault(vals)
-	filename := fmt.Sprintf("img/mama.png")
-	err := Plt(mama, filename)
+	filename := fmt.Sprintf("img/laguerre_filter.png")
+	err := Plt(l, filename)
 	if err != nil {
 		t.Error(err)
 	}

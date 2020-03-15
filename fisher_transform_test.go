@@ -2,12 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
-	"github.com/MathisWellmann/timeseries_generator"
+	"github.com/MathisWellmann/go_timeseries_generator"
 	"testing"
 )
 
 func TestFisherTransformGraph(t *testing.T) {
-	vals := timeseries_generator.SineWave(1024)
+	vals := go_timeseries_generator.SineWave(1024)
 	fish, err := FisherTransform(vals)
 	if err != nil {
 		t.Error(err)

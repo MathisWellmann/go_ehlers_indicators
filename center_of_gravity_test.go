@@ -2,12 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
-	"github.com/MathisWellmann/timeseries_generator"
+	"github.com/MathisWellmann/go_timeseries_generator"
 	"testing"
 )
 
 func TestCenterOfGravity(t *testing.T) {
-	vals := timeseries_generator.GaussianProcess(1024)
+	vals := go_timeseries_generator.GaussianProcess(1024)
 	cgo := CenterOfGravity(vals, 16)
 	for i := 0; i < len(cgo); i++ {
 		fmt.Printf("cgo[%d]: %f\n", i, cgo[i])
@@ -15,7 +15,7 @@ func TestCenterOfGravity(t *testing.T) {
 }
 
 func TestCenterOfGravityGraph(t *testing.T) {
-	vals := timeseries_generator.GaussianProcess(1024)
+	vals := go_timeseries_generator.GaussianProcess(1024)
 	cgo := CenterOfGravity(vals, 16)
 	filename := fmt.Sprintf("./img/center_of_gravity.png")
 	err := Plt(cgo, filename)

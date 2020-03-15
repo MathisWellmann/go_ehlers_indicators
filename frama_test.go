@@ -2,12 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
-	"github.com/MathisWellmann/timeseries_generator"
+	"github.com/MathisWellmann/go_timeseries_generator"
 	"testing"
 )
 
 func TestFRAMAGraph(t *testing.T) {
-	candles := timeseries_generator.GaussianOHLCVDefault(1024)
+	candles := go_timeseries_generator.GaussianOHLCVDefault(1024)
 	highs := make([]float64, len(candles))
 	lows := make([]float64, len(candles))
 	frama, err := FRAMA(highs, lows, 16)

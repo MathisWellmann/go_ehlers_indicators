@@ -2,12 +2,12 @@ package EhlersTAIndicators
 
 import (
 	"fmt"
-	"github.com/MathisWellmann/timeseries_generator"
+	"github.com/MathisWellmann/go_timeseries_generator"
 	"testing"
 )
 
 func TestZeroLagGraph(t *testing.T) {
-	vals := timeseries_generator.GaussianProcess(1024)
+	vals := go_timeseries_generator.GaussianProcess(1024)
 	zl := ZeroLagDefault(vals, 16)
 
 	filename := fmt.Sprintf("img/zero_lag.png")
@@ -19,7 +19,7 @@ func TestZeroLagGraph(t *testing.T) {
 
 // TestZeroLagGraphStep tests the zero lag filter on a step function by graphing it
 func TestZeroLagGraphStep(t *testing.T) {
-	vals := timeseries_generator.StepFunction(1024, 500, 100)
+	vals := go_timeseries_generator.StepFunction(1024, 500, 100)
 
 	filename := fmt.Sprintf("img/zero_lag_step.png")
 	err := Plt(vals, filename)

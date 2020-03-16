@@ -21,6 +21,7 @@ go get github.com/MathisWellmann/go_ehlers_indicators
 - [Laguerre RSI](http://mesasoftware.com/papers/TimeWarp.pdf)
 - [Roofing Filter](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
 - [Super Smoother](http://www.mesasoftware.com/papers/PredictiveIndicatorsForEffectiveTrading%20Strategies.pdf)
+- [Gaussian Filter](https://www.mesasoftware.com/papers/GaussianFilters.pdf)
 
 
 ### Images:
@@ -33,6 +34,7 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 ![cyber_cycle](img/cyber_cycle.png)
 ![center_of_gravity](img/center_of_gravity.png)
 ![mama](img/mama.png)
+![gaussian_filter](img/gaussian_filter_p3.png)
 ![re_flex](img/re_flex.png)
 ![trend_flex](img/trend_flex.png)
 ![laguerre_rsi](img/laguerre_rsi.png)
@@ -42,8 +44,7 @@ With synthetic data from [MathisWellmann/timeseries_generator](https://github.co
 
 ### TODOs:
 - Swiss Army Knife Indicator
-- Ehlers Filter
-- Gaussian Filter
+- [Ehlers Filter](http://mesasoftware.com/papers/EhlersFilters.pdf)
 - (maybe) Empirical mode decomposition
 - (maybe) Fourier Transform for traders
 
